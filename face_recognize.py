@@ -8,31 +8,6 @@ Options:
   -i, --test_image=<test_image>          Test image
 """
 
-"""
-Training directory structure:
-        <train_dir>/
-            <person_1>/
-                <person_1_face-1>.jpg
-                <person_1_face-2>.jpg
-                .
-                .
-                <person_1_face-n>.jpg
-           <person_2>/
-                <person_2_face-1>.jpg
-                <person_2_face-2>.jpg
-                .
-                .
-                <person_2_face-n>.jpg
-            .
-            .
-            <person_n>/
-                <person_n_face-1>.jpg
-                <person_n_face-2>.jpg
-                .
-                .
-                <person_n_face-n>.jpg
-"""
-
 import face_recognition
 import docopt
 from sklearn import svm
