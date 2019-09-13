@@ -1,4 +1,4 @@
-face_recognition_image
+Face recognition SVM
 =================
 
 Train multiple images per person then recognize known faces in an image using a SVC in Python
