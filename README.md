@@ -20,9 +20,9 @@ Usage:
   face_recognize.py -d <train_dir> -i <test_image>
 
 Options:
-  -h, --help                Show this help
+  -h, --help                          Show this help
   -d, --train_dir=<train_dir>         Directory with images for training
-  -i, --test_image=<test_image>          Test image
+  -i, --test_image=<test_image>       Test image
 ```
 
 Training directory structure
