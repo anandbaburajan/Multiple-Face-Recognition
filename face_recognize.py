@@ -3,9 +3,9 @@ Usage:
   face_recognize.py -d <train_dir> -i <test_image>
 
 Options:
-  -h, --help                Show this help
+  -h, --help                          Show this help
   -d, --train_dir=<train_dir>         Directory with images for training
-  -i, --test_image=<test_image>          Test image
+  -i, --test_image=<test_image>       Test image
 """
 
 import face_recognition
@@ -40,6 +40,8 @@ def face_recognize(dir, test):
                 # Add face encoding for current image with corresponding label (name) to the training data
                 encodings.append(face_enc)
                 names.append(person)
+            else:
+                print(person + "/" + person_img + " can't be used for training")
 
     # Create and train the SVC classifier
     clf = svm.SVC(gamma='scale')
